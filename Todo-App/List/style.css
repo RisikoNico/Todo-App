@@ -1,0 +1,186 @@
+* {
+  font-family: "Montserrat";
+  padding: 0;
+  margin: 0;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+input {
+  text-align: center;
+  position: relative;
+  background-color: #bababa;
+  border: none;
+  color: black;
+  caret-color: black;
+  width: 50%;
+  height: 60%;
+  font-size: 200%;
+  margin-left: 25%;
+  margin-top: 15px;
+}
+
+input:focus {
+  outline: none;
+}
+
+@keyframes moveBorderRight {
+  from {margin-left: 20%;}
+  to {margin-left: 32%;}
+}
+
+@keyframes moveBorderLeft {
+  from {margin-left: 32%;}
+  to {margin-left: 20%;}
+}
+
+#underline_ {
+  margin-left: 20%;
+  margin-top: 11.5%;
+  width: 8%;
+  height: 2%;
+  position: absolute;
+  border: 1px solid black;
+  border-top: none;
+  border-left:none;
+  border-right: none;
+  border-bottom: solid black;
+  animation: moveBorderLeft 2s ease;
+  animation-play-state: paused;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+#underline {
+  margin-left: 20%;
+  margin-top: 11.5%;
+  width: 8%;
+  height: 2%;
+  position: absolute;
+  border: 1px solid black;
+  border-top: none;
+  border-left:none;
+  border-right: none;
+  border-bottom: solid black;
+  animation: moveBorderRight 2s ease;
+  animation-play-state: paused;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+#list_name {
+  position: relative;
+  font-size: 300%;
+  text-align: center;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  margin-bottom: 3%;
+  z-index: 1;
+}
+
+.finish {
+  color: green;
+  font-size: 200%;
+  position: absolute;
+}
+
+.task_todo, .task_done {
+  background-color: #bababa;
+  width: 60%;
+  border-bottom-right-radius: 40px;
+  border-bottom-left-radius: 40px;
+  border-top-right-radius: 40px;
+  border-top-left-radius: 40px;
+  margin-bottom: 1%;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.taskname {
+  text-align: center;
+  width: auto;
+  height: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 120%;
+}
+
+#button_add_task {
+  position: relative;
+}
+
+#back_arrow_div {
+  width: 5%;
+  height: 5%;
+  top: 0;
+  left: 0;
+  float: left;
+  position: sticky;
+  font-size: 120%;
+  margin: 0;
+  padding: 0;
+  background-color: #c9c9c9;
+  z-index: 2;
+}
+
+#tasks_container_done {
+  width: 100%;
+  position: absolute;
+}
+
+#tasks_container_todo {
+  z-index: unset;
+  width: 100%;
+  position: absolute;
+}
+
+#done_p {
+  border-radius: 20px;
+  text-align: center;
+  padding-bottom: 4px;
+  margin-left: 32%;
+  width: 8%;
+  text-align: center;
+  margin-bottom: 15px;
+  transition: 1s;
+}
+
+#done_p:hover {
+  cursor: pointer;
+  background-color: #a8a8a8;
+}
+
+#todo_p {
+  border-radius: 20px;
+  z-index: 1;
+  padding-bottom: 4px;
+  width: 8%;
+  margin-left: 20%;
+  text-align: center;
+  margin-bottom: 15px;
+  transition: 1s;
+}
+
+#todo_p:hover {
+  cursor: pointer;
+  background-color: #a8a8a8;
+}
+
+#back_arrow_div:hover {
+  background-color: #a8a8a8;
+  cursor: pointer;
+}
+
+#back_arrow {
+  margin: 1px;
+  font-size: 200%;
+  height: 80%;
+  z-index: 3;
+}
+
+#back_arrow:hover {
+  cursor: pointer;
+}

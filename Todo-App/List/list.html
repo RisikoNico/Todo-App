@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>List</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <script src="../script.js"></script>
+    <script src="../task.js"></script>
+    <script src="main.js"></script>
+    <p id="underline"></p>
+    <div id="back_arrow_div" onclick="navigateBack()">
+      <p id="back_arrow" onclick="navigateBack()">←</p>
+    </div>
+    <p id="list_name"></p>
+    <div id="tasks_container_todo">
+      <p onclick="showTodos()" id="todo_p">Todo's</p>
+    </div>
+    <div id="tasks_container_done">
+      <p onclick="showDones()" id="done_p">Done</p>
+    </div>
+    <button onclick="addTask()" id="button_add_task">Add Task</button>
+  </body>
+</html>

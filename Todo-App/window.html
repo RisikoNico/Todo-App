@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Todo App</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <script src="list.js"></script>
+    <script src="script.js"></script>
+    <svg id="svg">
+      <!-- Left -->
+      <!-- First line -->
+      <path d="M0 120 L120 120 Z" stroke="#c4c4c4" stroke-width="2" fill="none" />
+      <!-- Curve top -->
+      <path d="M120 120 Q160 120, 160 80" stroke="#c4c4c4" stroke-width="2" fill="none" />
+      <!-- Curve right -->
+      <path d="M160 82 Q164 46, 200 42" stroke="#c4c4c4" stroke-width="2" fill="none" />
+      <!-- Right -->
+      <!-- First line -->
+      <path d="M944 120 L824 120 Z" stroke="#c4c4c4" stroke-width="2" fill="none" />
+      <!-- Curve top -->
+      <path d="M824 120 Q784 120, 784 80" stroke="#c4c4c4" stroke-width="2" fill="none" />
+      <!-- Curve left -->
+      <path d="M784 82 Q780 46, 744, 42" stroke="#c4c4c4" stroke-width="2" fill="none" />
+      <!-- Line between left and right -->
+      <path d="M200 42 L744 42" stroke="#c4c4c4" stroke-width="2" fill="none" />
+    </svg>
+    <p id="headline">Todo</p>
+    <div id="list_container" class="lists_background"></div>
+    <div id="button_container">
+      <button onclick="addList()">
+        <svg width="32px" height="32px">
+          <path d="M16 0 L16 32 Z" stroke="black" stroke-width="2.5" fill="none" />
+          <path d="M0 16 L32 16" stroke="black" stroke-width="2.5" fill="none" />
+        </svg>
+      </button>
+    </div>
+  </body>
+</html>
